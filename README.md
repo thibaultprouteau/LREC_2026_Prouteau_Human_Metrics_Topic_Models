@@ -94,7 +94,7 @@ Novel task where annotators determine whether a set of words comes from a single
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd LREC_2026_Prouteau_Human_Metrics_Topic_Models
+cd <directory>
 
 # Install dependencies
 cd word_intrusion_and_mixing
