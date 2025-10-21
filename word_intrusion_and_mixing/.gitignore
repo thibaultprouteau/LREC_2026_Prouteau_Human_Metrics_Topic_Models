@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# Data files (optional - uncomment if you don't want to track data)
+# *.csv
+# *.json
+# *.pkl
+
+# Output directories
+word_intrusion_output/
+word_intrusion_tasks/
+word_intrusion_mixing_tasks/
+sampled_tasks*/
+
+# Logs
+*.log

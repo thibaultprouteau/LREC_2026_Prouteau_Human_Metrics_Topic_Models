@@ -1,0 +1,26 @@
+[
+  [
+    {"word": "machine", "value": 0.95},
+    {"word": "the", "value": 0.89},
+    {"word": "learning", "value": 0.87},
+    {"word": "artificial", "value": 0.82},
+    {"word": "algorithm", "value": 0.75},
+    {"word": "model", "value": 0.68}
+  ],
+  [
+    {"word": "data", "value": 0.92},
+    {"word": "and", "value": 0.88},
+    {"word": "science", "value": 0.85},
+    {"word": "analysis", "value": 0.79},
+    {"word": "statistics", "value": 0.72},
+    {"word": "research", "value": 0.65}
+  ],
+  [
+    {"word": "book", "value": 0.91},
+    {"word": "read", "value": 0.87},
+    {"word": "story", "value": 0.83},
+    {"word": "author", "value": 0.78},
+    {"word": "page", "value": 0.74},
+    {"word": "novel", "value": 0.69}
+  ]
+]
