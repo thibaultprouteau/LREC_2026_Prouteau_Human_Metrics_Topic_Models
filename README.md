@@ -30,16 +30,34 @@ We evaluate six topic models (LDA, NMF, Top2Vec, BERTopic, CFMF, CFMF-emb) using
 │       └── word_mixing/      # Word mixing tasks (4 tracks)
 │
 ├── word_intrusion_and_mixing/
-│   ├── streamlit_app.py      # Interactive annotation interface
-│   ├── word_intrusion/       # Word intrusion implementation
-│   │   ├── cli.py
-│   │   ├── core.py
-│   │   ├── processors.py
-│   │   └── word_check.py
-│   └── topic_mixing/         # Topic word mixing implementation
-│       ├── core.py
-│       └── processors.py
+│   ├── streamlit_app.py      # Interactive task generation interface
+│   ├── run_app.sh            # Script to launch the Streamlit app
+│   ├── requirements.txt      # Python dependencies
+│   ├── sample_topics.json    # Example topic data
+│   │
+│   ├── word_intrusion/       # Main package directory
+│   │   ├── __init__.py
+│   │   ├── baml_client/      # BAML client for LLM integration
+│   │   ├── baml_src/         # BAML source files
+│   │   ├── task_selector/    # Task selection utilities
+│   │   ├── topic_mixing/     # Topic word mixing implementation
+│   │   │   ├── core.py
+│   │   │   └── processors.py
+│   │   └── word_intrusion/   # Word intrusion implementation
+│   │       ├── cli.py
+│   │       ├── core.py
+│   │       ├── file_processor.py
+│   │       ├── processors.py
+│   │       └── word_check.py
+│   │
+│   └── Documentation files:
+│       ├── MANIFEST.md
+│       ├── PACKAGE_README.md
+│       ├── README.md
+│       ├── STOPWORD_ANALYSIS_README.md
+│       └── STOPWORD_TOOLS_GUIDE.md
 │
+├── LICENSE                   # MIT License
 └── README.md                 # This file
 ```
 
@@ -54,7 +72,7 @@ Traditional task where annotators identify the "intruder" word that doesn't belo
 - **Tasks**: `data/tasks/word_intrusion/` (4 tracks)
 
 ### Topic Word Mixing Task (TWM)
-Novel task where annotators determine whether a set of words comes from a single topic or multiple mixed topics. This evaluates **inter-topic distinctness**.
+Novel task where annotators determine whether a set of words comes from a single topic or two mixed topics. This evaluates **inter-topic distinctness**.
 
 - **File**: `data/annotations/word_mixing_annotations.csv`
 - **Tasks**: `data/tasks/word_mixing/` (4 tracks)
@@ -63,7 +81,7 @@ Novel task where annotators determine whether a set of words comes from a single
 - **Total annotations**: ~4,000
 - **Domain**: Philosophy of science publications
 - **Models evaluated**: LDA, NMF, Top2Vec, BERTopic, CFMF, CFMF-emb
-- **Tracks**: 4 difficulty/variation tracks per task
+- **Tracks**: 4 tracks per task
 
 ## Installation
 

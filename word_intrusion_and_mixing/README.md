@@ -1,18 +1,23 @@
-# Streamlit Deployment Package
+# Word Intrusion and Topic Mixing - Task Generation Interface
 
-This directory contains all necessary files to deploy the Word Intrusion Streamlit application.
+This directory contains the Streamlit application and core modules for generating and managing human evaluation tasks for topic models, including both traditional word intrusion and the novel Topic Word Mixing (TWM) tasks.
 
 ## Directory Structure
 
 ```
-streamlit_deployment/
+word_intrusion_and_mixing/
 ├── streamlit_app.py              # Main Streamlit application
 ├── requirements.txt              # Python dependencies
 ├── run_app.sh                    # Script to run the application
 ├── sample_topics.json            # Sample data for testing
-├── STOPWORD_ANALYSIS_README.md   # Stopword functionality documentation
-├── STOPWORD_TOOLS_GUIDE.md       # Stopword tools guide
-├── PACKAGE_README.md             # Package documentation
+├── .gitignore                    # Git ignore file
+│
+├── Documentation files:
+│   ├── README.md                 # This file
+│   ├── MANIFEST.md               # Detailed file manifest
+│   ├── PACKAGE_README.md         # Package documentation
+│   ├── STOPWORD_ANALYSIS_README.md   # Stopword functionality documentation
+│   └── STOPWORD_TOOLS_GUIDE.md   # Stopword tools guide
 │
 └── word_intrusion/               # Main package directory
     ├── __init__.py               # Package initialization
@@ -35,12 +40,16 @@ streamlit_deployment/
     │   └── selector.py           # TaskSelector and folder processing
     │
     ├── baml_client/              # BAML client for LLM integration
-    │   └── [various Python files]
+    │   ├── __init__.py
+    │   ├── async_client.py
+    │   ├── sync_client.py
+    │   ├── types.py
+    │   └── [other client files]
     │
     └── baml_src/                 # BAML configuration
-        ├── clients.baml
-        ├── generators.baml
-        └── word_checker.baml
+        ├── clients.baml          # Client configuration
+        ├── generators.baml       # Generator configuration
+        └── word_checker.baml     # Word checking logic
 ```
 
 ## Installation
