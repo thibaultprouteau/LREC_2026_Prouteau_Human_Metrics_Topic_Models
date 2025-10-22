@@ -103,6 +103,9 @@ See `requirements.txt` for complete list.
 
 Converts various topic model formats into unified JSON format for task generation.
 
+![File Processing Interface](images/tab_1.png)
+*Tab 1: File Processing interface for converting various topic model formats*
+
 #### Input Parameters
 - **Input Method**: Choose how to provide input
   - `File Upload`: Upload a file directly through the browser
@@ -126,6 +129,9 @@ Converts various topic model formats into unified JSON format for task generatio
 ### Tab 2: Task Generation (Word Intrusion)
 
 Generates word intrusion tasks from processed topic data.
+
+![Task Generation Interface](images/tab_2.png)
+*Tab 2: Word Intrusion task generation with configurable parameters*
 
 #### Input Parameters
 - **Input Method**: Source of processed topic data
@@ -177,6 +183,9 @@ Generates word intrusion tasks from processed topic data.
 
 Generates topic mixing tasks using semantic similarity between topics.
 
+![Topic Mixing Interface](images/tab_3.png)
+*Tab 3: Topic Mixing task generation using semantic similarity*
+
 #### Input Parameters
 - **Input Method**: Source of processed topic data
   - `Select Processed File`: Choose from files processed in Tab 1
@@ -222,6 +231,9 @@ Generates topic mixing tasks using semantic similarity between topics.
 ### Tab 4: Task Sampling
 
 Samples tasks for human evaluation with representative coverage across models and topics.
+
+![Task Sampling Interface](images/tab_4.png)
+*Tab 4: Task Sampling for creating evaluation sets with coverage control*
 
 #### Input Parameters
 - **Task Type**: Type of tasks to sample
