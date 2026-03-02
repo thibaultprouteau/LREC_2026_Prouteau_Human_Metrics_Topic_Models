@@ -177,13 +177,6 @@ If you use this code or dataset in your research, please cite:
 }
 ```
 
-## Additional Documentation
-
-- **[MANIFEST.md](word_intrusion_and_mixing/MANIFEST.md)**: Detailed file manifest
-- **[PACKAGE_README.md](word_intrusion_and_mixing/PACKAGE_README.md)**: Package-specific documentation
-- **[STOPWORD_ANALYSIS_README.md](word_intrusion_and_mixing/STOPWORD_ANALYSIS_README.md)**: Stopword analysis tools
-- **[STOPWORD_TOOLS_GUIDE.md](word_intrusion_and_mixing/STOPWORD_TOOLS_GUIDE.md)**: Guide for stopword processing
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
