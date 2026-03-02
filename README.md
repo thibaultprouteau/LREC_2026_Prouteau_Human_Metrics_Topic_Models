@@ -181,14 +181,6 @@ If you use this code or dataset in your research, please cite:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
-
-[Add contact information here]
-
 ## Acknowledgments
 
 We thank all annotators who contributed to this evaluation dataset and the open-source community for the topic modeling tools evaluated in this work.
-
----
-
-**Note**: This is an anonymous submission for LREC 2026. Author information will be added upon acceptance.
